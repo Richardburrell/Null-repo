@@ -1,8 +1,8 @@
 //Including the input output library
 #include <iostream>
 
-//Including the standard library header
-#include <stdlib.h>
+//Including the C standard library header
+#include <cstdlib>
 
 // use a standard C++ namespace
 using namespace std;
