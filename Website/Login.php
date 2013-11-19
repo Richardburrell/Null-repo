@@ -7,23 +7,27 @@
 <style type="text/css">
 .loginPageStyle{
 	font-family: "Commodore 64 Angled";
-	background-color: #3A31A6;
-	color: #7C74DF;
+	background-color: #000000;
+	color: #00FF00;
 }
 .textCenter {
 	text-align: center;
 }
-.auto-style1 {
-	color: #914141;
+.auto-style2 {
+	text-align: left;
 }
 </style>
 </head>
 
 <body class="loginPageStyle">
  
-<p class="textCenter">**** COMMODORE 64 BASIC V2 ****</p>
-<p class="loginPageStyle">64K RAM SYSTEM 38911 BASIC BYTES FREE</p>
-<p class="loginPageStyle">READY.</p>
+<p class="auto-style2">LOAD "DATABASE HACK",8,1</p>
+<p class="loginPageStyle">LOADING INTO RAM....</p>
+<p class="loginPageStyle">DETECTED PRIVACY LEAK!</p>
+<p class="loginPageStyle">CIPHING DATABASE... </p>
+<p class="loginPageStyle">DATABASE COMPRIMISED!</p>
+<p class="loginPageStyle">HELLO CIPHER.</p>
+<p class="loginPageStyle">AWAITING YOUR COMMAND.</p>
 <p class="loginPageStyle">&nbsp;</p>
 <p class="loginPageStyle">&nbsp;</p>
 <p class="textCenter">WELCOME</p>
