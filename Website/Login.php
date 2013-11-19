@@ -3,7 +3,7 @@
 
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>Untitled 1</title>
+<title>Syntax Cipher Login</title>
 <style type="text/css">
 .loginPageStyle{
 	font-family: "Commodore 64 Angled";
