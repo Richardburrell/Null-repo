@@ -18,6 +18,13 @@
 	margin-top:5px;
 	color:black;
 }
+.p-style{
+	font-size: 12pt;
+	font-family:"Courier New", Courier, monospace;
+	color:black;
+	padding-left:10px;
+	
+}
 #homeButton {
 	background-position: center;
 	position: absolute;
@@ -87,12 +94,12 @@
 #title {
 	background-image: url('Images/TitleBG.png');
 	background-position: center;
+	position:absolute;
 	height:150px;
 	width: 885px;
 	z-index: auto;
 	left: 15px;
 	color: #FFFFFF;
-	position:absolute;
 }
 #newsReal{
 	height: 300px;
@@ -129,3 +136,39 @@
 	background-color:black;
 	color:white;
 }
+#about{
+	position: absolute;
+	height: 480px;
+	width: 690px;
+	left: 200px;
+	top: 540px;
+	border: 5px solid black;
+}
+#superDopeVidz{
+	height: 300px;
+	width: 360px;
+	left: 200px;
+	top: 230px;
+	background-color: #000000;
+	position: absolute;
+	color:white;
+}
+#superDopeBooks{
+	height: 300px;
+	width: 330px;
+	left: 565px;
+	top: 230px;
+	background-color: #000000;
+	position: absolute;
+	color:white;
+}
+#docMothaTrucka{
+	height: 480px;
+	width: 360px;
+	left: 200px;
+	top: 540px;
+	background-color: #000000;
+	position: absolute;
+	color:white;
+}
+
