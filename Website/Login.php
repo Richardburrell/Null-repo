@@ -6,7 +6,7 @@
 <title>Syntax Cipher Login</title>
 <style type="text/css">
 .loginPageStyle{
-	font-family: "Commodore 64 Angled";
+	font-family: "Courier";
 	background-color: #000000;
 	color: #00FF00;
 }
@@ -21,19 +21,19 @@
 
 <body class="loginPageStyle">
  
-<p class="auto-style2">LOAD "DATABASE HACK",8,1</p>
-<p class="loginPageStyle">LOADING INTO RAM....</p>
-<p class="loginPageStyle">DETECTED PRIVACY LEAK!</p>
-<p class="loginPageStyle">CIPHING DATABASE... </p>
-<p class="loginPageStyle">DATABASE COMPRIMISED!</p>
-<p class="loginPageStyle">HELLO CIPHER.</p>
-<p class="loginPageStyle">AWAITING YOUR COMMAND.</p>
-<p class="loginPageStyle">&nbsp;</p>
-<p class="loginPageStyle">&nbsp;</p>
-<p class="textCenter">WELCOME</p>
-<p class="textCenter">TO</p>
-<p class="textCenter">SYNTAX CIPHERS!</p>
-<p class="textCenter">PLEASE LOGIN.</p>
+<p class="auto-style2"><strong>LOAD "DATABASE HACK",8,1</strong></p>
+<p class="loginPageStyle"><strong>LOADING INTO RAM....</strong></p>
+<p class="loginPageStyle"><strong>DETECTED PRIVACY LEAK!</strong></p>
+<p class="loginPageStyle"><strong>CIPHING DATABASE... </strong> </p>
+<p class="loginPageStyle"><strong>DATABASE COMPRIMISED!</strong></p>
+<p class="loginPageStyle"><strong>HELLO CIPHER.</strong></p>
+<p class="loginPageStyle"><strong>AWAITING YOUR COMMAND.</strong></p>
+<p class="loginPageStyle"><strong></strong></p>
+<p class="loginPageStyle"><strong></strong></p>
+<p class="textCenter"><strong>WELCOME</strong></p>
+<p class="textCenter"><strong>TO</strong></p>
+<p class="textCenter"><strong>SYNTAX CIPHERS!</strong></p>
+<p class="textCenter"><strong>PLEASE LOGIN.</strong></p>
 <p class="textCenter">&nbsp;</p>
 
 <table width="300" border="0" align="center" outline="0" cellpadding="0" cellspacing="0" >
