@@ -35,7 +35,7 @@
 	left: 15px;
 	top: 176px;
 	font-family: 'Courier New', Courier, monospace;
-	background-image: url('Images/TopPageNavButton.png');
+	background-image: url('../Users/Rjtodd/Documents/GitHub/Null-repo/Website/Images/TopPageNavButton.png');
 }
 #newsButton {
 	background-position: center;
@@ -46,7 +46,7 @@
 	left: 192px;
 	top: 176px;
 	font-family: 'Courier New', Courier, monospace;
-	background-image: url('Images/TopPageNavButton.png');
+	background-image: url('../Users/Rjtodd/Documents/GitHub/Null-repo/Website/Images/TopPageNavButton.png');
 }
 #forumButton {
 	background-position: center;
@@ -57,7 +57,7 @@
 	left: 369px;
 	top: 176px;
 	font-family: 'Courier New', Courier, monospace;
-	background-image: url('Images/TopPageNavButton.png');
+	background-image: url('../Users/Rjtodd/Documents/GitHub/Null-repo/Website/Images/TopPageNavButton.png');
 }
 #resButton {
 	background-position: center;
@@ -68,7 +68,7 @@
 	left: 546px;
 	top: 176px;
 	font-family: 'Courier New', Courier, monospace;
-	background-image: url('Images/TopPageNavButton.png');
+	background-image: url('../Users/Rjtodd/Documents/GitHub/Null-repo/Website/Images/TopPageNavButton.png');
 }
 #aboutButton {
 	background-position: center;
@@ -79,10 +79,10 @@
 	left: 723px;
 	top: 176px;
 	font-family: 'Courier New', Courier, monospace;
-	background-image: url('Images/TopPageNavButton.png');
+	background-image: url('../Users/Rjtodd/Documents/GitHub/Null-repo/Website/Images/TopPageNavButton.png');
 }
 #sideNav {
-	background-image:url('Images/SideNav.png');
+	background-image:url('../Users/Rjtodd/Documents/GitHub/Null-repo/Website/Images/SideNav.png');
 	height:800px;
 	width: 177px;
 	z-index: auto;
@@ -92,7 +92,7 @@
 	position:absolute;
 }
 #title {
-	background-image: url('Images/TitleBG.png');
+	background-image: url('../Users/Rjtodd/Documents/GitHub/Null-repo/Website/Images/TitleBG.png');
 	height:150px;
 	width: 885px;
 	z-index: auto;
@@ -118,7 +118,7 @@
 	border: 5px solid black;
 }
 #bioScroll{
-	background-image:url('Images/bioScroll.png');
+	background-image:url('../Users/Rjtodd/Documents/GitHub/Null-repo/Website/Images/bioScroll.png');
 	position: absolute;
 	height: 480px;
 	width: 300px;
