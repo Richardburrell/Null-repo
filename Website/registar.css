@@ -1,0 +1,31 @@
+﻿.h5-style{
+	font-family:"Courier New", Courier, monospace;
+	font-size:16pt;
+	font-weight:bold;
+	color:black;
+	position:absolute;
+}
+.image{
+	position:absolute;
+	left:600px;
+	top:700px;
+}
+.form-style{
+	position:absolute;
+	margin-top:50px;
+	margin-left:15px;
+	padding-left:15px;
+}
+.input{
+	position:absolute;
+	margin-left:100px;
+	left:100px;
+}
+#info{
+	position:absolute;
+	background-color:white;
+	left:15px;
+	top:345px;
+	height:1000px;
+	width:885px;
+}
