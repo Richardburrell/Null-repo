@@ -18,12 +18,29 @@
 	margin-top:5px;
 	color:black;
 }
+.h4-style{
+	text-align: center;
+	font-size: 35pt;
+	font-family:"Courier New", Courier, monospace;
+	margin-top:5px;
+	color:white;
+}
 .p-style{
 	font-size: 12pt;
 	font-family:"Courier New", Courier, monospace;
 	color:black;
 	padding-left:10px;
 	
+}
+.href-style{
+	position: absolute;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 16pt;
+	font-weight:bold;
+	color: white;
+	margin-left: 250px;
+	padding-bottom: 50px;
+	margin-right: 0px;	
 }
 #homeButton {
 	background-position: center;
@@ -169,6 +186,15 @@
 	top: 540px;
 	background-color: #000000;
 	position: absolute;
-	color:white;
+	color: white;
+} 
+#login{
+	position: absolute;
+	top: 300px;
+	left: 250px;
+	height: 300px;
+	width: 450px;
+	background-image:url('Images/Login.png');
+	background-position: center;
+	color: white;
 }
-
