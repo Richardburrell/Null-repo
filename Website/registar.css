@@ -6,9 +6,10 @@
 	position:absolute;
 }
 .image{
-	position:absolute;
-	left:600px;
-	top:700px;
+	width:360px;
+	height:360px;
+	margin-left:250px;
+	margin-top:300px;
 }
 .form-style{
 	position:absolute;
@@ -22,10 +23,11 @@
 	left:100px;
 }
 #info{
-	position:absolute;
 	background-color:white;
-	left:15px;
-	top:345px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:185px;
 	height:1000px;
 	width:885px;
+	padding:50px;
 }
