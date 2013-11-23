@@ -1,4 +1,8 @@
-﻿.h1-style{
+﻿*{
+	margin:0;
+	padding:0;
+}
+.h1-style{
 	text-align: center;
 	table-layout: auto;
 	font-size: 60pt;
@@ -29,173 +33,181 @@
 	font-size: 12pt;
 	font-family:"Courier New", Courier, monospace;
 	color:black;
-	padding-left:10px;
-	
+	text-indent:12px;	
 }
 .href-style{
-	position: absolute;
+	position:absolute;
 	font-family: "Courier New", Courier, monospace;
 	font-size: 16pt;
 	font-weight:bold;
 	color: white;
+	margin-top: 35px;
 	margin-left: 250px;
-	padding-bottom: 50px;
 	margin-right: 0px;	
+}
+.body{
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	text-align: center;
+	background-color:black;
+}
+.halign{
+	position:absolute;
+	top:181px;
+}
+
+#centered{
+	width: 900px;
+	text-align: left;
+	border: 0px;
+	padding: 0;
+	margin: 0 auto;
 }
 #homeButton {
 	background-position: center;
-	position: absolute;
 	width: 177px;
 	height: 50px;
-	z-index: 2;
-	left: 15px;
-	top: 176px;
+	margin-left: 0px;
+	margin-top: 5px;
 	font-family: 'Courier New', Courier, monospace;
 	background-image: url('Images/TopPageNavButton.png');
 }
 #newsButton {
 	background-position: center;
-	position: absolute;
 	width: 177px;
 	height: 50px;
-	z-index: 2;
-	left: 192px;
-	top: 176px;
+	margin-left: 177px;
+	margin-top: 5px;
 	font-family: 'Courier New', Courier, monospace;
 	background-image: url('Images/TopPageNavButton.png');
 }
 #forumButton {
 	background-position: center;
-	position: absolute;
 	width: 177px;
 	height: 50px;
-	z-index: 2;
-	left: 369px;
-	top: 176px;
+	margin-left: 354px;
+	margin-top: 5px;
 	font-family: 'Courier New', Courier, monospace;
 	background-image: url('Images/TopPageNavButton.png');
 }
 #resButton {
 	background-position: center;
-	position: absolute;
 	width: 177px;
 	height: 50px;
-	z-index: 2;
-	left: 546px;
-	top: 176px;
+	margin-left: 531px;
+	margin-top: 5px;
 	font-family: 'Courier New', Courier, monospace;
 	background-image: url('Images/TopPageNavButton.png');
 }
 #aboutButton {
 	background-position: center;
-	position: absolute;
 	width: 177px;
 	height: 50px;
-	z-index: 2;
-	left: 723px;
-	top: 176px;
+	margin-left: 708px;
+	margin-top: 5px;
 	font-family: 'Courier New', Courier, monospace;
 	background-image: url('Images/TopPageNavButton.png');
 }
 #sideNav {
 	background-image:url('Images/SideNav.png');
 	background-position: center;
+	border: 2px solid white;
 	height:800px;
 	width: 177px;
-	z-index: auto;
-	top:230px;
-	left: 15px;
+	margin-top: 55px;
 	color: #FFFFFF;
-	position:absolute;
 }
 #title {
 	background-image: url('Images/TitleBG.png');
 	background-position: center;
-	position:absolute;
 	height:150px;
 	width: 885px;
+	border: 2px solid white;
 	z-index: auto;
-	left: 15px;
-	top: 15px;
+	margin-left: 0px;
+	margin-top: 15px;
 	color: #FFFFFF;
 }
 #newsReal{
 	height: 300px;
 	width: 695px;
-	left: 200px;
-	top: 230px;
+	margin-left: 187px;
+	margin-top: 55px;
 	background-color: #000000;
-	position: absolute;
 	color:white;
 }
 #mission{
-	position: absolute;
 	height: 480px;
-	width: 360px;
-	left: 200px;
-	top: 540px;
-	border: 5px solid black;
+	width: 375px;
+	margin-left: 190px;
+	margin-top: 376px;
+	background-color:white;
+	border: 2px solid white;
 }
 #bioScroll{
 	background-image:url('Images/bioScroll.png');
-	position: absolute;
 	height: 480px;
 	width: 300px;
-	left: 590px;
-	top: 540px;
+	border: 2px solid white;
+	margin-left: 575px;
+	margin-top: 376px;
 	color:white;
 }
 #bottmBox{
-	position: absolute;
 	height: 100px;
 	width: 885px;
-	left: 15px;
-	top: 1040px;
+	margin-left: 0px;
+	margin-top: 865px;
 	background-color:black;
 	color:white;
 }
 #about{
-	position: absolute;
-	height: 480px;
-	width: 690px;
-	left: 200px;
-	top: 540px;
-	border: 5px solid black;
+	height: 445px;
+	width: 650px;
+	margin-left: 192px;
+	margin-top: 376px;
+	background-color:white;
+	padding: 20px;
 }
 #superDopeVidz{
 	height: 300px;
 	width: 360px;
-	left: 200px;
-	top: 230px;
+	margin-left: 182px;
+	margin-top: 55px;
 	background-color: #000000;
-	position: absolute;
 	color:white;
 }
 #superDopeBooks{
 	height: 300px;
 	width: 330px;
-	left: 565px;
-	top: 230px;
+	margin-left: 547px;
+	margin-top: 55px;
 	background-color: #000000;
-	position: absolute;
 	color:white;
 }
 #docMothaTrucka{
 	height: 480px;
 	width: 360px;
-	left: 200px;
-	top: 540px;
+	margin-left: 182px;
+	margin-top: 380px;
 	background-color: #000000;
-	position: absolute;
 	color: white;
 } 
 #login{
-	position: absolute;
-	top: 300px;
-	left: 250px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
 	height: 300px;
 	width: 450px;
-	background-image:url('Images/Login.png');
+	border: 2px solid white;
+	background-image: url('Images/Login.png');
 	background-position: center;
 	color: white;
+}
+.submit{
+	position:absolute;
+	margin-top: 38px;
+	width: 100px;
+	margin-left: 63px;
 }

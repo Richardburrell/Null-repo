@@ -7,46 +7,33 @@
 <link rel="stylesheet" type="text/css" href="webPage.css"/>
 <style type="text/css">
 .auto-style1 {
-	margin-top: 0px;
+	margin-top: 35px;
 	width: 100px;
-	margin-left:68px;
-	left: 21px; 
-	top: 260px;
-}
-.auto-style2 {
-	position: absolute;
-	font-family: "Courier New", Courier, monospace;
-	font-size: 16pt;
-	font-weight: bold;
-	color: white;
-	margin-left: 250px;
-	padding-bottom: 50px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-left: 0;
 }
 </style>
 </head>
 
-<body bgcolor="black">
+<body class="body">
+<div id="centered">
 
-<div id="title" top="15px">
-	<h1 class="h1-style">Syntax Ciphers</h1>
-</div>
-<div id="login">
-	<h4 class="h4-style">Login:</h4>
-	<br/>
-	<form action="access.php" method="post">
-		<h2 class="h2-style">
-			UserName: <input type="text" name="username" size="50" maxlength="10"/>
-			</br>
-			Password: <input type="password" name="pass" size="50" maxlength="8"/>
-		</h2>&nbsp;
-	    <a href="registration.html" class="auto-style2" style="left: 8px; top: 259px" >Register</a>
-		<input type="submit" name="enter" value="Enter" onClick="validation()" class="auto-style1"/>
-	</form>&nbsp;
-</div>
+	<div id="title">
+		<h1 class="h1-style">Syntax Ciphers</h1>
+	</div>
+	<div id="login">
+		<h4 class="h4-style">Login:</h4>
+		<br/>
+		<form action="access.php" method="post">
+			<h2 class="h2-style">
+				UserName: <input type="text" name="username" size="50" maxlength="10"/>
+				<br/>
+				Password: <input type="password" name="pass" size="50" maxlength="8"/>
+			</h2>
+		    <a href="registration.html" class="href-style">Register</a>
+			<input class="submit" type="submit" name="enter" value="Enter"/></form>
+	</div>
 
+</div>
 </body>
 
 </html>
