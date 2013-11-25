@@ -1,8 +1,4 @@
-﻿*{
-	margin:0;
-	padding:0;
-}
-.h1-style{
+﻿.h1-style{
 	text-align: center;
 	table-layout: auto;
 	font-size: 60pt;
@@ -14,8 +10,10 @@
 	font-size: 20pt;
 	font-family:"Courier", Courier, monospace;
 	margin-top:5px;
+	color:white;
 }
 .h3-style {
+	text-decoration:none;
 	text-align:center;
 	font-size:20pt;
 	font-family:"Courier", Courier, monospace;
@@ -37,14 +35,10 @@
 	text-indent:12px;	
 }
 .href-style{
-	position:absolute;
+	text-decoration:none;
 	font-family: "Courier", Courier, monospace;
-	font-size: 16pt;
-	font-weight:bold;
-	color: white;
-	margin-top: 35px;
-	margin-left: 250px;
-	margin-right: 0px;	
+	font-size: 20pt;
+	color: black;
 }
 .body{
 	margin: 0;
@@ -275,3 +269,11 @@
 	width: 100px;
 	margin-left: 63px;
 }
+.auto-style2 {
+	text-align: center;
+	font-size: 20pt;
+	font-family: "Courier", Courier, monospace;
+	margin-top: 5px;
+	color: #48FC48;
+}
+
