@@ -1,4 +1,8 @@
-﻿.h1-style{
+﻿*{
+	margin:0;
+	padding:0;
+}
+.h1-style{
 	text-align: center;
 	table-layout: auto;
 	font-size: 60pt;
@@ -10,10 +14,8 @@
 	font-size: 20pt;
 	font-family:"Courier", Courier, monospace;
 	margin-top:5px;
-	color:white;
 }
 .h3-style {
-	text-decoration:none;
 	text-align:center;
 	font-size:20pt;
 	font-family:"Courier", Courier, monospace;
@@ -35,10 +37,14 @@
 	text-indent:12px;	
 }
 .href-style{
-	text-decoration:none;
+	position:absolute;
 	font-family: "Courier", Courier, monospace;
-	font-size: 20pt;
-	color: black;
+	font-size: 16pt;
+	font-weight:bold;
+	color: white;
+	margin-top: 35px;
+	margin-left: 250px;
+	margin-right: 0px;	
 }
 .body{
 	margin: 0;
@@ -200,9 +206,8 @@
 	width: 375px;
 	margin-left: 190px;
 	margin-top: 376px;
-	background-color:white;
-	border: 2px solid white;
-}
+	background-color:lime;
+	}
 #bioScroll{
 	background-image:url('Images/bioScroll.png');
 	height: 480px;
@@ -269,11 +274,3 @@
 	width: 100px;
 	margin-left: 63px;
 }
-.auto-style2 {
-	text-align: center;
-	font-size: 20pt;
-	font-family: "Courier", Courier, monospace;
-	margin-top: 5px;
-	color: #48FC48;
-}
-
