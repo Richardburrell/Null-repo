@@ -1,13 +1,13 @@
 ﻿.h1-style{
 	text-align: center;
 	table-layout: auto;
-	font-size: 60pt;
+	font-size: 90pt;
 	font-family: "Courier", Courier, monospace;
 	margin-top: 25px;
 }
 .h2-style {
 	text-align: center;
-	font-size: 20pt;
+	font-size: 30pt;
 	font-family:"Courier", Courier, monospace;
 	margin-top:5px;
 	color:white;
@@ -15,7 +15,7 @@
 .h3-style {
 	text-decoration:none;
 	text-align:center;
-	font-size:20pt;
+	font-size:30pt;
 	font-family:"Courier", Courier, monospace;
 	margin-top:5px;
 	color:black;
@@ -53,7 +53,7 @@
 }
 
 #centered{
-	width: 900px;
+	width: 1330px;
 	text-align: left;
 	border: 0px;
 	padding: 0;
@@ -61,10 +61,10 @@
 }
 #homeButton {
 	background-position: center;
-	width: 177px;
-	height: 50px;
+	width: 260px;
+	height: 75px;
 	margin-left: 0px;
-	margin-top: 5px;
+	margin-top: 75px;
 	font-family: 'Courier', Courier, monospace;
 	background-image: url('Images/TopPageNavButton.png');
 }
@@ -72,10 +72,10 @@
 	background-position: center;
 	text-align:	center;
 	font-size:30pt;
-	width: 177px;
-	height: 50px;
+	width: 260px;
+	height: 75px;
 	margin-left: 0px;
-	margin-top: 5px;
+	margin-top: 75px;
 	text-decoration: underline;
 	color: #48FC48;
 	font-family: 'Courier', Courier, monospace;
@@ -84,10 +84,10 @@
 
 #newsButton {
 	background-position: center;
-	width: 177px;
-	height: 50px;
-	margin-left: 177px;
-	margin-top: 5px;
+	width: 260px;
+	height: 75px;
+	margin-left: 265px;
+	margin-top: 75px;
 	font-family: 'Courier', Courier, monospace;
 	background-image: url('Images/TopPageNavButton.png');
 }
@@ -106,10 +106,10 @@
 
 #forumButton {
 	background-position: center;
-	width: 177px;
-	height: 50px;
-	margin-left: 354px;
-	margin-top: 5px;
+	width: 260px;
+	height: 75px;
+	margin-left: 530px;
+	margin-top: 75px;
 	font-family: 'Courier', Courier, monospace;
 	background-image: url('Images/TopPageNavButton.png');
 }
@@ -127,10 +127,10 @@
 
 #resButton {
 	background-position: center;
-	width: 177px;
-	height: 50px;
-	margin-left: 531px;
-	margin-top: 5px;
+	width: 260px;
+	height: 75px;
+	margin-left: 795px;
+	margin-top: 75px;
 	font-family: 'Courier', Courier, monospace;
 	background-image: url('Images/TopPageNavButton.png');
 }
@@ -148,10 +148,10 @@
 
 #aboutButton {
 	background-position: center;
-	width: 177px;
-	height: 50px;
-	margin-left: 708px;
-	margin-top: 5px;
+	width: 260px;
+	height: 75px;
+	margin-left: 1060px;
+	margin-top: 75px;
 	font-family: 'Courier', Courier, monospace;
 	background-image: url('Images/TopPageNavButton.png');
 }
@@ -171,52 +171,50 @@
 	background-image:url('Images/SideNav.png');
 	background-position: center;
 	border: 2px solid white;
-	height:800px;
-	width: 177px;
-	margin-top: 55px;
+	height:1175px;
+	width: 260px;
+	margin-top: 165px;
 	color: #FFFFFF;
 }
 #title {
 	background-image: url('Images/TitleBG.png');
 	background-position: center;
-	height:150px;
-	width: 885px;
+	height:225px;
+	width: 1320px;
 	border: 2px solid white;
-	z-index: auto;
 	margin-left: 0px;
-	margin-top: 15px;
 	color: #FFFFFF;
 }
 #newsReal{
-	height: 300px;
-	width: 695px;
-	margin-left: 187px;
-	margin-top: 55px;
+	height: 645px;
+	width: 1055px;
+	margin-left: 265px;
+	margin-top: 165px;
 	background-color: #000000;
 	color:white;
 }
 #mission{
-	height: 480px;
-	width: 375px;
-	margin-left: 190px;
-	margin-top: 376px;
+	height: 525px;
+	width: 500px;
+	margin-left: 277px;
+	margin-top: 815px;
 	background-color:white;
 	border: 2px solid white;
 }
 #bioScroll{
 	background-image:url('Images/bioScroll.png');
-	height: 480px;
-	width: 300px;
+	height: 525px;
+	width: 525px;
 	border: 2px solid white;
-	margin-left: 575px;
-	margin-top: 376px;
+	margin-left: 795px;
+	margin-top: 815px;
 	color:white;
 }
 #bottmBox{
-	height: 100px;
-	width: 885px;
+	height: 225px;
+	width: 1320px;
 	margin-left: 0px;
-	margin-top: 865px;
+	margin-top: 1350px;
 	background-color:black;
 	color:white;
 }
