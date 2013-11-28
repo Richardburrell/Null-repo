@@ -200,7 +200,6 @@
 	color:white;
 }
 #mission{
-<<<<<<< HEAD
 	height: 525px;
 	width: 500px;
 	margin-left: 277px;
@@ -208,14 +207,7 @@
 	background-color:white;
 	border: 2px solid white;
 }
-=======
-	height: 480px;
-	width: 375px;
-	margin-left: 190px;
-	margin-top: 376px;
-	background-color:lime;
-	}
->>>>>>> a5c03842ce07d905afc0730246e1930edd3dce3a
+
 #bioScroll{
 	background-image:url('Images/bioScroll.png');
 	height: 525px;

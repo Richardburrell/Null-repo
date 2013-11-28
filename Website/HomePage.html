@@ -2,23 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<!-- styles needed by jScrollPane -->
-<link type="text/css" href="style/jquery.jscrollpane.css" rel="stylesheet" media="all" />
-
-<!-- latest jQuery direct from google's CDN -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-</script>
-
-<!-- the mousewheel plugin - optional to provide mousewheel support -->
-<script type="text/javascript" src="script/jquery.mousewheel.js"></script>
-
-<!-- the jScrollPane script -->
-<script type="text/javascript" src="script/jquery.jscrollpane.min.js"></script>
 <meta content="en-us" http-equiv="Content-Language" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Syntax Ciphers Home NewsFeed For</title>
 <link rel="stylesheet" type="text/css" href="webPage.css"/>
 <style type="text/css">
+
 .auto-style1 {
 	text-decoration: none;
 }
@@ -35,61 +24,8 @@
 	font-family: "Courier", Courier, monospace;
 	margin-top: 5px;
 	color: #FFFFFF;
-	width: 100%;
-	height: 200px;
-	overflow: auto;
 }
-$(function()
-{
-	var win = $(window);
-	// Full body scroll
-	var isResizing = false;
-	win.bind(
-		'resize',
-		function()
-		{
-			if (!isResizing) {
-				isResizing = true;
-				var container = $('#full-page-container');
-				// Temporarily make the container tiny so it doesn't influence the
-				// calculation of the size of the document
-				container.css(
-					{
-						'width': 1,
-						'height': 1
-					}
-				);
-				// Now make it the size of the window...
-				container.css(
-					{
-						'width': win.width(),
-						'height': win.height()
-					}
-				);
-				isResizing = false;
-				container.jScrollPane(
-					{
-						'showArrows': true
-					}
-				);
-			}
-		}
-	).trigger('resize');
-
-	// Workaround for known Opera issue which breaks demo (see
-	// http://jscrollpane.kelvinluck.com/known_issues.html#opera-scrollbar )
-	$('body').css('overflow', 'hidden');
-
-	// IE calculates the width incorrectly first time round (it
-	// doesn't count the space used by the native scrollbar) so
-	// we re-trigger if necessary.
-	if ($('#full-page-container').width() != win.width()) {
-		win.trigger('resize');
-	}
-
-	// Internal scrollpanes
-	$('.scroll-pane').jScrollPane({showArrows: true});
-});</style>
+</style>
 </head>
 
 <body class="body">
@@ -114,7 +50,8 @@ $(function()
 	<h2 class="h2-style">QuickLinks</h2>
 	</div>
 	<div class="halign" id="newsReal">
-	<h2 class="h2-style">	<div id="DivNewsReaderFX"></div>
+	<div id="DivNewsReaderFX"></div>
+	<h2 class="h2-style">	
 	<script type="text/javascript" src="swfobject.js"></script>
 	<script type="text/javascript">
 		var flashvars = {};
@@ -129,8 +66,19 @@ $(function()
 	</script>
 </h2>
 	</div>
-	<div class="halign" id="mission">
-	<h3 class="auto-style3"style="height:480px;width:375px; background:url(Images/Motherboard.png);">
+	<div class="halign" id="mission"::-webkit-scrollbar {width: 12px;}
+ 
+	::-webkit-scrollbar-track {
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	    border-radius: 10px;
+	}
+ 
+	::-webkit-scrollbar-thumb {
+	    border-radius: 10px;
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	}
+	>
+	<h3 class="auto-style3"style="height:480px;width:375px; overflow:auto; background:url(Images/Motherboard.png);">
 	Background pictures are ideal for when you want to place text over the top of your picture. When using a background picture, scrollbars will only appear if we have enough text in the scroll box.
 	Mission Statement... words asdfkasjdjf asdfkasd;fjasld;f as;dlkfjasldf as;ldkfja;sldfj asdf;alskdjf;lasdjf asdlfkja;sdkf
 	asdlfkasdklfjaskdfjkasdf;asdfj asd;lfjal;sdfjsda fasdlkfjas;dlfksdfj as;ldfja;sld;fj sdfja;sldkfjaslkdf woeurowieur sldkjf ewoismdvmcv
