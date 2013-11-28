@@ -1,7 +1,7 @@
 <settings>
   <General_Properties>
-    <componentWidth value="597"/>
-    <componentHeight value="290"/>
+    <componentWidth value="1045"/>
+    <componentHeight value="625"/>
     <assets value="categories3.xml"/>
     <style value="assets/css/style2.css"/>
     <skin value="assets/skins/skin3.xml"/>

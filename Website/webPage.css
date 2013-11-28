@@ -15,13 +15,23 @@
 	font-family:"Courier", Courier, monospace;
 	margin-top:5px;
 }
+
 .h3-style {
 	text-align:center;
 	font-size:30pt;
 	font-family:"Courier", Courier, monospace;
-	margin-top:5px;
 	color:black;
+	margin-top: 15px;
 }
+
+.h3-invert{
+	text-align: center;
+	font-size: 30pt;
+	font-family: "Courier", Courier, monospace;
+	color: #48FC48;
+	margin-top: 10px;
+}
+
 .h4-style{
 	text-align: center;
 	font-size: 35pt;
@@ -37,12 +47,13 @@
 	text-indent:12px;	
 }
 .href-style{
-	position:absolute;
+	text-decoration:none;
 	font-family: "Courier", Courier, monospace;
 	font-size: 16pt;
-	font-weight:bold;
+	font-weight: bold;
+	text-align: center;
 	color: white;
-	margin-top: 35px;
+	margin-top: 0px;
 	margin-left: 250px;
 	margin-right: 0px;	
 }
@@ -82,10 +93,9 @@
 	height: 75px;
 	margin-left: 0px;
 	margin-top: 75px;
-	text-decoration: underline;
 	color: #48FC48;
 	font-family: 'Courier', Courier, monospace;
-	background-image: url('Images/CurrentPageNavButton.png');
+	background-image: url('Images/TopCurrentNavButton.png');
 }
 
 #newsButton {
@@ -100,14 +110,13 @@
 #newsCurrentButton {
 	background-position: center;
 	text-align:	center;
-	width: 177px;
-	height: 50px;
-	margin-left: 177px;
-	margin-top: 5px;
-	text-decoration: underline;
+	width: 260px;
+	height: 75px;
+	margin-left: 265px;
+	margin-top: 75px;
 	color: #48FC48;
 	font-family: 'Courier', Courier, monospace;
-	background-image: url('Images/CurrentPageNavButton.png');
+	background-image: url('Images/TopCurrentNavButton.png');
 }
 
 #forumButton {
@@ -121,14 +130,14 @@
 }
 #forumCurrentButton {
 	background-position: center;
-	width: 177px;
-	height: 50px;
-	margin-left: 354px;
-	margin-top: 5px;
+	width: 260px;
+	height: 75px;
+	margin-left: 530px;
+	margin-top: 75px;
 	text-decoration: underline;
 	color: #48FC48;
 	font-family: 'Courier', Courier, monospace;
-	background-image: url('Images/CurrentPageNavButton.png');
+	background-image: url('Images/TopCurrentNavButton.png');
 }
 
 #resButton {
@@ -142,14 +151,13 @@
 }
 #resCurrentButton {
 	background-position: center;
-	width: 177px;
-	height: 50px;
-	margin-left: 531px;
-	margin-top: 5px;
-	text-decoration: underline;
+	width: 260px;
+	height: 75px;
+	margin-left: 795px;
+	margin-top: 75px;
 	color: #48FC48;
 	font-family: 'Courier', Courier, monospace;
-	background-image: url('Images/CurrentPageNavButton.png');
+	background-image: url('Images/TopCurrentNavButton.png');
 }
 
 #aboutButton {
@@ -163,14 +171,13 @@
 }
 #aboutCurrentButton {
 	background-position: center;
-	width: 177px;
-	height: 50px;
-	margin-left: 708px;
-	margin-top: 5px;
-	text-decoration: underline;
+	width: 260px;
+	height: 75px;
+	margin-left: 1060px;
+	margin-top: 75px;
 	color: #48FC48;
 	font-family: 'Courier', Courier, monospace;
-	background-image: url('Images/CurrentPageNavButton.png');
+	background-image: url('Images/TopCurrentNavButton.png');
 }
 
 #sideNav {
@@ -199,6 +206,9 @@
 	background-color: #000000;
 	color:white;
 }
+#DivNewsReaderFX{
+	margin-left:10px;	
+}
 #mission{
 	height: 525px;
 	width: 500px;
@@ -226,34 +236,34 @@
 	color:white;
 }
 #about{
-	height: 445px;
-	width: 650px;
-	margin-left: 192px;
-	margin-top: 376px;
+	height: 500px;
+	width: 1005px;
+	margin-left: 275px;
+	margin-top: 803px;
 	background-color:white;
 	padding: 20px;
 }
 #superDopeVidz{
-	height: 300px;
-	width: 360px;
-	margin-left: 182px;
-	margin-top: 55px;
+	height: 525px;
+	width: 515px;
+	margin-left: 270px;
+	margin-top: 165px;
 	background-color: #000000;
 	color:white;
 }
 #superDopeBooks{
-	height: 300px;
-	width: 330px;
-	margin-left: 547px;
-	margin-top: 55px;
+	height: 525px;
+	width: 515px;
+	margin-left: 795px;
+	margin-top: 165px;
 	background-color: #000000;
 	color:white;
 }
 #docMothaTrucka{
-	height: 480px;
-	width: 360px;
-	margin-left: 182px;
-	margin-top: 380px;
+	height: 525px;
+	width: 515px;
+	margin-left: 270px;
+	margin-top: 815px;
 	background-color: #000000;
 	color: white;
 } 
