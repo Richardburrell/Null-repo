@@ -8,26 +8,24 @@
 .image{
 	width:360px;
 	height:360px;
-	margin-left:250px;
-	margin-top:300px;
+	margin-left:475px;
+	margin-top:75px;
 }
 .form-style{
-	position:absolute;
 	margin-top:50px;
-	margin-left:15px;
-	padding-left:15px;
+	margin-left:375px;
 }
 .input{
 	position:absolute;
-	margin-left:100px;
+	margin-left:150px;
 	left:100px;
 }
 #info{
 	background-color:white;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:185px;
-	height:1000px;
-	width:885px;
-	padding:50px;
+	margin-top:375px;
+	height:950px;
+	width:1320px;
+	padding:0px;
 }
