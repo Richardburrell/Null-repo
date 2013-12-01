@@ -2,8 +2,17 @@
 	font-family:"Courier New", Courier, monospace;
 	font-size:16pt;
 	font-weight:bold;
-	color:black;
+	color:#48FC48;
 	position:absolute;
+}
+
+.lime{
+	text-align: center;
+	font-size: 30pt;
+	font-family:"Courier", Courier, monospace;
+	margin-top:5px;
+	color:#48FC48;
+
 }
 .image{
 	width:360px;
@@ -19,9 +28,11 @@
 	position:absolute;
 	margin-left:150px;
 	left:100px;
+	color:#48FC48;
+	background-color:black;
 }
 #info{
-	background-color:white;
+	background-color:black;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:375px;
