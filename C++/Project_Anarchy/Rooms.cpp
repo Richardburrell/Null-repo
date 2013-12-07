@@ -63,7 +63,7 @@ void roomGraph::setNodeId(const int& nodeiD){
 
 //----------List Instructions-------
 
-void roomGraph::appendZombie(ListTracker& node){
+void roomGraph::appendZombie(Zombie& newZombie){     //appends a Zombie node to the end of the list
     
 }
 
@@ -72,7 +72,7 @@ void roomGraph::deleteZombie(Zombie delZombie){     //this will traverse a list 
     
 }
 
-void roomGraph::deleteZombieList(){
+void roomGraph::deleteZombieList(){             //deletes a node's entire list of Zombies
     ListTracker* itr = nullptr;
     
     for (int i = 0; i < getNumZombieNodes(); i++) {
@@ -101,7 +101,7 @@ void roomGraph::copyZombie(Zombie& cpEnemy, ListTracker* copyHead){    //this wi
     
 }
 
-void roomGraph::exchangeZombie(Zombie& leavingZombie){
+void roomGraph::exchangeZombie(Zombie& leavingZombie){          //this method is for when Zombies leave a node they can be exchanged to the other via copyZombie then deleted via deleteZombie
     
     ListTracker* itr = nullptr;
     
