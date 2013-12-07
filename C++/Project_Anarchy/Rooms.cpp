@@ -67,7 +67,7 @@ void roomGraph::appendZombie(ListTracker& node){
     
 }
 
-bool roomGraph::deleteZombie(){     //this will traverse a list and delete a specific node and if a node has been deleted return true
+bool roomGraph::deleteZombie(Zombie delZombie){     //this will traverse a list and delete a specific node and if a node has been deleted return true
     
     bool ret_Val = false;
     
@@ -87,19 +87,33 @@ void roomGraph::deleteZombieList(){
     
 }
 
-void roomGraph::copyZombie(Zombie& cpEnemy){    //this will copy a node from one list to another
+void roomGraph::copyZombie(Zombie& cpEnemy, ListTracker* copyHead){    //this will copy a zombie from one list to another
     
     ListTracker* itr = nullptr;
     
     for (itr = head; itr != nullptr; itr = itr->next) {
         
         if (itr->getEnemy() == cpEnemy) {
-            for (ListTracker* itr2 = head; itr2 != nullptr; itr2 = itr2->next) {
-                if (itr->next == nullptr) {
-                    itr->next = new ListTracker(cpEnemy, nullptr);
+            for (ListTracker* itr2 = copyHead; itr2 != nullptr; itr2 = itr2->next) {
+                if (itr2->next == nullptr) {
+                    itr2->next = new ListTracker(cpEnemy, nullptr);
                 }
             }
         }
     }
     
+}
+
+void roomGraph::exchangeZombie(Zombie& leavingZombie){
+    
+    ListTracker* itr = nullptr;
+    
+    for (itr = head; itr != nullptr; itr = itr->next) {
+        if (itr->getEnemy() == leavingZombie) {
+            Zombie temp = itr->getEnemy();
+            copyZombie(temp, head);
+            deleteZombie(itr->getEnemy());
+        }
+        
+    }
 }
