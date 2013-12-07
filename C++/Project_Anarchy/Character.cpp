@@ -116,6 +116,8 @@ void Item::setNumOfItemHeld(int& numOfItemHeld){
 
 //---------------Resources Implementation--------------------
 
+//--------Setters-------------
+
 void Resources::setX(double& x){
     this->x = x;
 }
@@ -129,3 +131,42 @@ void Resources::setZ(double& z){
 }
 
 //----------------End of Resources---------------------------
+
+
+
+
+
+
+//----------------Guns Implementation------------------------
+
+//--------Setters---------------
+
+void Guns::setAmmoType(int ammoType){
+    this->ammoType = (getItemId() == ammoType &&
+                      (ammoType > -1 && ammoType < 4))
+                      ? ammoType : 0;
+}
+
+void Guns::setDamage(int damage){
+    this->damage = damage;
+}
+
+//---------------End of Guns--------------------------------
+
+
+
+
+
+
+//---------------Gadgets Implementation---------------------
+
+void Gadgets::setEnergyLevel(int energyLevel){
+    this->energyLevel = (energyLevel > -1 && energyLevel < 100)? energyLevel : 100;
+}
+
+void Gadgets::setDamage(int damage){
+    this->damage = damage;
+}
+
+//---------------End of Gadgets-----------------------------
+

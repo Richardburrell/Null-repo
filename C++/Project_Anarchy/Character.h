@@ -333,7 +333,7 @@ namespace Inventory {
         
             //--------------Setters-----------------------
         
-            void setNumOfElementsUsed(int numOfElementsUsed);
+            void setNumOfElementsUsed(int numOfElementsUsed){this->numOfElementsUsed = numOfElementsUsed;}
         
             //--------------Getters-----------------------
         
@@ -341,9 +341,21 @@ namespace Inventory {
         
             //--------------Pack Instructions-------------
         
-            void addItem(T& item);
-            void deleteItem(T& item);
-            void swapItems(T& item);
+            void addItem(T& item, int row, int column){
+                pack[row][column] = item;
+            }
+        
+            void deleteItem(T& item, int row, int column){
+                delete pack[row][column];
+            }
+        
+            void swapItems(T& item1, T& item2, int row1, int column1,
+                           int row2, int column2){
+                
+                pack[row1][column1] = item2;
+                pack[row2][column2] = item1;
+                
+            }
         
     }; //end of Pack class
     
@@ -369,7 +381,7 @@ namespace Inventory {
         
             //--------------Setters-----------------------
         
-            void setNumOfElementsUsed(int numOfElementsUsed);
+            void setNumOfElementsUsed(int numOfElementsUsed){this->numOfElementsUsed = numOfElementsUsed;}
         
             //--------------Getters-----------------------
         
@@ -377,9 +389,22 @@ namespace Inventory {
         
             //--------------Bin Instructions--------------
         
-            void addItem(T& item);
-            void deleteItem(T& item);
-            void swapItems(T& item);
+            void addItem(T& item, int row, int column){
+                bin[row][column] = item;
+            }
+        
+            void deleteItem(T& item, int row, int column){
+                delete bin[row][column];
+            }
+        
+            void swapItems(T& item1, T& item2, int row1, int column1,
+                           int row2, int column2){
+                
+                bin[row1][column1] = item2;
+                bin[row2][column2] = item1;
+            
+            }
+
         
     }; //end of Bin class
 }
