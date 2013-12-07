@@ -67,7 +67,7 @@ namespace Rooms {
             //-------------------List instructions-------------
         
             void appendZombie(ListTracker& node);            //adds a zombie to the last node in the list
-            bool deleteZombie(Zombie delZombie);            //traverses the list and deletes a specific node
+            void deleteZombie(Zombie delZombie);            //traverses the list and deletes a specific node
             void deleteZombieList();        //starts at head and deletes every node in order
             void copyZombie(Zombie& cpEnemy, ListTracker* copyHead);       //copies a node from the list to be sent to another
         void exchangeZombie(Zombie& leavingZombie);

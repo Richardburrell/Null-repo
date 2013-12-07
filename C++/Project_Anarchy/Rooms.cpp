@@ -67,12 +67,9 @@ void roomGraph::appendZombie(ListTracker& node){
     
 }
 
-bool roomGraph::deleteZombie(Zombie delZombie){     //this will traverse a list and delete a specific node and if a node has been deleted return true
-    
-    bool ret_Val = false;
+void roomGraph::deleteZombie(Zombie delZombie){     //this will traverse a list and delete a specific node
     
     
-    return ret_Val;
 }
 
 void roomGraph::deleteZombieList(){
