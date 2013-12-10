@@ -68,8 +68,21 @@ void roomGraph::appendZombie(Zombie& newZombie){     //appends a Zombie node to 
 }
 
 void roomGraph::deleteZombie(Zombie delZombie){     //this will traverse a list and delete a specific node
-    
-    
+    ListTracker* before = head;
+	ListTracker* itr = nullptr;
+	for (itr = head, itr != null, itr = itr-> next){
+		if (head->getEnemy() == delZombie){
+			head = head->next;
+			itr-> next = nullptr;					//this is the special case where the zombie is the first in the list
+			delete itr;
+		}
+		else if (itr->getEnemy() == delZombie){
+			before = head-> next;					//this moves the before pointer to the next item in the list allowing us to delete itr
+			itr-> next = nullptr;
+			delete itr;
+		}
+	before = itr;									
+	}
 }
 
 void roomGraph::deleteZombieList(){             //deletes a node's entire list of Zombies
