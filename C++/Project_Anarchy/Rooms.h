@@ -108,6 +108,10 @@ namespace Rooms {
             bool getMarked() const {return marked;}
             int getNumZombieNodes() const {return numZombieNodes;}
             int getNodeId() const {return nodeiD;}
+            roomGraph* getNorth() {return north;}
+            roomGraph* getEast() {return east;}
+            roomGraph* getSouth() {return south;}
+            roomGraph* getWest() {return west;}
         
         
             //-------------------List instructions-------------
@@ -116,7 +120,11 @@ namespace Rooms {
             void deleteZombie(Zombie delZombie);            //traverses the list and deletes a specific node
             void deleteZombieList();        //starts at head and deletes every node in order
             void copyZombie(Zombie& cpEnemy, ListTracker* copyHead);       //copies a node from the list to be sent to another
-        void exchangeZombie(Zombie& leavingZombie);
+            void exchangeZombie(Zombie& leavingZombie);
+        
+        //-----------------Overloaded------------------------
+        
+        roomGraph operator =(roomGraph assignThis){return *this;}
         
     };// end roomGraph
     
