@@ -23,7 +23,51 @@ namespace Rooms {
     
     enum isActive{OFFLINE, STANDBY, ONLINE};
     
-    class roomGraph{
+    class Sector{
+        /*
+            this class creates a sector or a rectangle area on the x,y plane that is applied as a room
+        */
+        
+        private:
+        
+            //-----Points-----
+            double minX;
+            double minY;
+            double maxX;
+            double maxY;
+        
+        public:
+        
+            //------------------Constructors------------------
+        
+            Sector():minX(1.0), minY(1.0), maxX(1.0), maxY(1.0){} //default constructor
+        
+            Sector(double minX, double minY, double maxX, double maxY)
+                :minX(minX), minY(minY), maxX(maxX), maxY(maxY){} //constructor for specific sector
+        
+            //------------------Setters-----------------------
+        
+            void setMinX(double& minX);
+            void setMinY(double& minY);
+            void setMaxX(double& maxX);
+            void setMaxY(double& maxY);
+        
+            //------------------Getters-----------------------
+        
+            double getMinX() const {return minX;}
+            double getMinY() const {return minY;}
+            double getMaxX() const {return maxX;}
+            double getMaxY() const {return maxY;}
+        
+            //------------------Checks------------------------
+        
+            bool checkX(double& x);
+            bool checkY(double& y);
+        
+        
+    }; //end of Sector class
+    
+    class roomGraph : public Sector{
         
         private:
         
@@ -46,6 +90,8 @@ namespace Rooms {
             roomGraph();        //default constructor
         
             roomGraph(const int state, const bool marked, const int numZombieNodes, const int nodeiD,
+                      const double minX, const double
+                      minY, const double maxX, const double maxY,
                       roomGraph* north, roomGraph* south, roomGraph* east, roomGraph* west,
                       ListTracker* head);                 //constructor used when adding a node to the graph
         
@@ -62,6 +108,10 @@ namespace Rooms {
             bool getMarked() const {return marked;}
             int getNumZombieNodes() const {return numZombieNodes;}
             int getNodeId() const {return nodeiD;}
+            roomGraph* getNorth() {return north;}
+            roomGraph* getEast() {return east;}
+            roomGraph* getSouth() {return south;}
+            roomGraph* getWest() {return west;}
         
         
             //-------------------List instructions-------------
@@ -70,7 +120,11 @@ namespace Rooms {
             void deleteZombie(Zombie delZombie);            //traverses the list and deletes a specific node
             void deleteZombieList();        //starts at head and deletes every node in order
             void copyZombie(Zombie& cpEnemy, ListTracker* copyHead);       //copies a node from the list to be sent to another
-        void exchangeZombie(Zombie& leavingZombie);
+            void exchangeZombie(Zombie& leavingZombie);
+        
+        //-----------------Overloaded------------------------
+        
+        roomGraph operator =(roomGraph assignThis){return *this;}
         
     };// end roomGraph
     

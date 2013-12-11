@@ -12,11 +12,52 @@
 
 using namespace Rooms;
 
+
+//--------------------Sector Implementation---------------------------
+
+
+//---------Setters----------------
+
+void Sector::setMinX(double& minX){
+    this->minX = minX;
+}
+
+void Sector::setMinY(double& minY){
+    this->minY = minY;
+}
+
+void Sector::setMaxX(double& maxX){
+    this->maxX = maxX;
+}
+
+void Sector::setMaxY(double& maxY){
+    this->maxY = maxY;
+}
+
+//---------Checkers---------------
+
+bool Sector::checkX(double& x){
+    return (x < getMaxX() && x > getMinX());
+}
+
+bool Sector::checkY(double& y){
+    return (y < getMaxY() && y > getMinY());
+}
+
+//--------------------End of Sector-----------------------------------
+
+
+
+
+
+
 //--------------------roomGraphs implementation---------------------------
 
 //---------Constructors-----------
 
 roomGraph::roomGraph (){     //default constructor used when initially creating the map to create the first node
+    
+    Sector();
     
     state = ONLINE;
     marked = 0;
@@ -32,10 +73,13 @@ roomGraph::roomGraph (){     //default constructor used when initially creating 
     
 }
 
-roomGraph::roomGraph (const int state, const bool marked, const int numZombieNodes, const int nodeiD,
+roomGraph::roomGraph (const int state, const bool marked, const int numZombieNodes,
+                      const int nodeiD, const double minX, const double
+                      minY, const double maxX, const double maxY,
                       roomGraph* north, roomGraph* south, roomGraph* east, roomGraph* west,
-                      ListTracker* head)
-                        :north(north), south(south), east(east), west(west), head(head){                 //constructor used when adding a node to the graph
+                      ListTracker* head):north(north), south(south), east(east), west(west), head(head){                 //constructor used when adding a node to the graph
+                            
+    Sector(minX, minY, maxX, maxY);
 
     setState(state);
     setMarked(marked);
@@ -69,7 +113,11 @@ void roomGraph::appendZombie(Zombie& newZombie){     //appends a Zombie node to 
     ListTracker* itr = nullptr;
 	for (itr = head; itr != nullptr; itr = itr-> next){
 		itr-> next = new ListTracker (newZombie, nullptr);
+<<<<<<< HEAD
 	}
+=======
+    }
+>>>>>>> 1fab815662f198da09ed6b1ae7d05a9406ee0f92
 }
 
 void roomGraph::deleteZombie(Zombie delZombie){     //this will traverse a list and delete a specific node
@@ -132,3 +180,10 @@ void roomGraph::exchangeZombie(Zombie& leavingZombie){          //this method is
         
     }
 }
+
+//------------------------End of roomGraph-----------------------
+
+
+
+
+

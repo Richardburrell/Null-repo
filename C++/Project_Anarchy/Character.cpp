@@ -7,6 +7,7 @@
 //
 # include "Character.h"
 using namespace CharacterType;
+using namespace Inventory;
 
 //---------------Character Implementation-----------------
 
@@ -70,4 +71,102 @@ void Zombie::setID(const int& iD){
     this->iD = (iD >= 0 && iD < 3)? iD : 0;
 }
 
+//---------Overloaded Operators-----
+
+bool Zombie::operator ==(const Zombie& assignThis){
+    
+    bool retVal = false; //fix this in future to compare differently, this will be a bug as is when we ceate graphics but i have no other way at the moment
+    
+    if (getX() == assignThis.getX()
+        &&
+        getY() == assignThis.getY()
+        &&
+        getZ() == assignThis.getZ()) {
+        
+        retVal = true;
+    }
+    
+    return retVal;
+}
+
+
 //--------------End of Zombie-------------------------------
+
+
+
+
+
+
+//--------------Item Implementation-------------------------
+
+void Item::setItemId(int& itemId){
+    this->itemId = (itemId >= 0 && itemId < 4)? itemId : 0;
+}
+
+void Item::setNumOfItemHeld(int& numOfItemHeld){
+    this->numOfItemHeld = (numOfItemHeld > -1)? numOfItemHeld : 0;
+}
+
+//---------------End of Item--------------------------------
+
+
+
+
+
+
+//---------------Resources Implementation--------------------
+
+//--------Setters-------------
+
+void Resources::setX(double& x){
+    this->x = x;
+}
+
+void Resources::setY(double& y){
+    this->y = y;
+}
+
+void Resources::setZ(double& z){
+    this->z = z;
+}
+
+//----------------End of Resources---------------------------
+
+
+
+
+
+
+//----------------Guns Implementation------------------------
+
+//--------Setters---------------
+
+void Guns::setAmmoType(int ammoType){
+    this->ammoType = (getItemId() == ammoType &&
+                      (ammoType > -1 && ammoType < 4))
+                      ? ammoType : 0;
+}
+
+void Guns::setDamage(int damage){
+    this->damage = damage;
+}
+
+//---------------End of Guns--------------------------------
+
+
+
+
+
+
+//---------------Gadgets Implementation---------------------
+
+void Gadgets::setEnergyLevel(int energyLevel){
+    this->energyLevel = (energyLevel > -1 && energyLevel < 100)? energyLevel : 100;
+}
+
+void Gadgets::setDamage(int damage){
+    this->damage = damage;
+}
+
+//---------------End of Gadgets-----------------------------
+
