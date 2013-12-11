@@ -75,23 +75,23 @@ namespace Rooms {
             bool marked;            //bool to protect against cycling errors
             int numZombieNodes;     //count to keep track of Zombies in the node
             int nodeiD;             //used to identify which node is being dealt with
+
+			
         
-            roomGraph* north;       //pointers used to navigate the graph in four directions
+        public:
+
+			roomGraph* north;       //pointers used to navigate the graph in four directions
             roomGraph* south;
             roomGraph* east;
             roomGraph* west;
         
             ListTracker* head;      //points to the first node of the list of zombies currently in this node
         
-        public:
-        
             //-------------------Constructors------------------
         
             roomGraph();        //default constructor
         
             roomGraph(const int state, const bool marked, const int numZombieNodes, const int nodeiD,
-                      const double minX, const double
-                      minY, const double maxX, const double maxY,
                       roomGraph* north, roomGraph* south, roomGraph* east, roomGraph* west,
                       ListTracker* head);                 //constructor used when adding a node to the graph
         
@@ -108,10 +108,7 @@ namespace Rooms {
             bool getMarked() const {return marked;}
             int getNumZombieNodes() const {return numZombieNodes;}
             int getNodeId() const {return nodeiD;}
-            roomGraph* getNorth() {return north;}
-            roomGraph* getEast() {return east;}
-            roomGraph* getSouth() {return south;}
-            roomGraph* getWest() {return west;}
+
         
         
             //-------------------List instructions-------------

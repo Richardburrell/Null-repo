@@ -11,6 +11,7 @@
 
 
 using namespace Rooms;
+using namespace CharacterType;
 
 
 //--------------------Sector Implementation---------------------------
@@ -74,12 +75,10 @@ roomGraph::roomGraph (){     //default constructor used when initially creating 
 }
 
 roomGraph::roomGraph (const int state, const bool marked, const int numZombieNodes,
-                      const int nodeiD, const double minX, const double
-                      minY, const double maxX, const double maxY,
-                      roomGraph* north, roomGraph* south, roomGraph* east, roomGraph* west,
+                      const int nodeiD, roomGraph* north, roomGraph* south, roomGraph* east, roomGraph* west,
                       ListTracker* head):north(north), south(south), east(east), west(west), head(head){                 //constructor used when adding a node to the graph
                             
-    Sector(minX, minY, maxX, maxY);
+    Sector(0, 0, 0, 0);
 
     setState(state);
     setMarked(marked);
@@ -112,12 +111,10 @@ void roomGraph::setNodeId(const int& nodeiD){
 void roomGraph::appendZombie(Zombie& newZombie){     //appends a Zombie node to the end of the list
     ListTracker* itr = nullptr;
 	for (itr = head; itr != nullptr; itr = itr-> next){
-		itr-> next = new ListTracker (newZombie, nullptr);
-<<<<<<< HEAD
+		if(itr->next == nullptr){
+			itr-> next = new ListTracker (newZombie, nullptr);
+		}
 	}
-=======
-    }
->>>>>>> 1fab815662f198da09ed6b1ae7d05a9406ee0f92
 }
 
 void roomGraph::deleteZombie(Zombie delZombie){     //this will traverse a list and delete a specific node

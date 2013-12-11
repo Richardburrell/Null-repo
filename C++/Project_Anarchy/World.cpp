@@ -9,6 +9,8 @@
 #include "World.h"
 
 using namespace world;
+using namespace Rooms;
+using namespace CharacterType;
 
 //------------------------------Map Implementation------------------------------
 
@@ -24,7 +26,7 @@ Map::Map(){
 
 Map::Map(roomGraph* root, Player* human, ListTracker* head, Zombie* enemy){
     
-    this->root = root = new roomGraph(2, 1, 0, 0, 0, 0, 0, 0, nullptr, nullptr, nullptr, nullptr, nullptr);
+    this->root = root = new roomGraph(2, true, 0, 0, nullptr, nullptr, nullptr, nullptr, nullptr);
     
     this->human = human = new Player(0, 0, 0, 5);
     
@@ -63,20 +65,23 @@ void Map::setNumRooms(int numRooms){
 
 void Map::buildStation(){
     
-    roomGraph* itr = nullptr;
+	roomGraph* itrNorth = root;
+	roomGraph* itrSouth = root;
+	roomGraph* itrEast = root;
+	roomGraph* itrWest = root;
     
     if (getNumRooms() == 1) {
         
-        *root->getNorth() = *new roomGraph(0, 1, 0, numRooms, 0, 0, 0, 0, nullptr, root, nullptr, nullptr, nullptr);
+		itrNorth->north = new roomGraph(0, true, 0, numRooms, nullptr, root, nullptr, nullptr, nullptr);
         numRooms++;
         
-        *root->getSouth() = *new roomGraph(0, 1, 0, numRooms, 0, 0, 0, 0, root, nullptr, nullptr, nullptr, nullptr);
+        root->south = new roomGraph(0, true, 0, numRooms, root, nullptr, nullptr, nullptr, nullptr);
         numRooms++;
         
-        *root->getEast() = *new roomGraph(0, 1, 0, numRooms, 0, 0, 0, 0, nullptr, nullptr, root, nullptr, nullptr);
+        root->east = new roomGraph(0, true, 0, numRooms, nullptr, nullptr, root, nullptr, nullptr);
         numRooms++;
         
-        *root->getWest() = *new roomGraph(0, 1, 0, numRooms, 0, 0, 0, 0, nullptr, nullptr, nullptr, root, nullptr);
+        root->west = new roomGraph(0, true, 0, numRooms, nullptr, nullptr, nullptr, root, nullptr);
         numRooms++;
         
     }

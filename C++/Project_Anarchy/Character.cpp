@@ -14,15 +14,15 @@ using namespace Inventory;
 //----------Setters-----------
 
 void Character::setX(const double& x){ //is bogus right now but will use that statment to check x as a valid point
-    this->x = (x < 0)? x : 0;
+    this->x = (x > 0)? x : 0;
 }
 
 void Character::setY(const double& y){ //is bogus right now but will use that statment to check y as a valid point
-    this->y = (y < 0)? y : 0;
+    this->y = (y > 0)? y : 0;
 }
 
 void Character::setZ(const double& z){ //is bogus right now but will use that statment to check z as a valid point
-    this->z = (z < 0)? z : 0;
+    this->z = (z > 0)? z : 0;
 }
 
 void Character::setDx(const double& dx){ //is bogus right now but will use that statment to check dx as a valid direction

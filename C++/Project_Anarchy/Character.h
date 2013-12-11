@@ -137,16 +137,10 @@ namespace CharacterType {
                 return (new Zombie(getID(), getHealth(), getX(), getY(), getZ()));
             }
         
-<<<<<<< HEAD
-			bool operator == (Zombie& enemy){
-				return(this->iD == enemy.iD);
-			}
-=======
             //--------------Overloaded Operators-----
         
             bool operator ==(const Zombie& assignThis);
         
->>>>>>> 1fab815662f198da09ed6b1ae7d05a9406ee0f92
     }; //end of Zombie Definition
     
     
@@ -326,7 +320,7 @@ namespace Inventory {
         
         private:
         
-            T* pack[3][3] = {nullptr};        //array of type T pointers to items
+            T* pack[3][3];        //array of type T pointers to items
             int numOfElementsUsed;            //number of elements containing an item
         
         public:
@@ -374,7 +368,7 @@ namespace Inventory {
         
         private:
         
-        T* bin[5][5] = {nullptr};
+        T* bin[5][5];
         int numOfElementsUsed;            //number of elements containing an item
         
         public:
