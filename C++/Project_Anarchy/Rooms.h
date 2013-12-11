@@ -76,16 +76,16 @@ namespace Rooms {
             int numZombieNodes;     //count to keep track of Zombies in the node
             int nodeiD;             //used to identify which node is being dealt with
 
-			
-        
-        public:
-
 			roomGraph* north;       //pointers used to navigate the graph in four directions
             roomGraph* south;
             roomGraph* east;
             roomGraph* west;
         
             ListTracker* head;      //points to the first node of the list of zombies currently in this node
+			
+        
+        public:
+
         
             //-------------------Constructors------------------
         
@@ -109,7 +109,10 @@ namespace Rooms {
             int getNumZombieNodes() const {return numZombieNodes;}
             int getNodeId() const {return nodeiD;}
 
-        
+			roomGraph* getNorth() {return north;}
+			roomGraph* getSouth() {return south;}
+			roomGraph* getEast() {return east;}
+			roomGraph* getWest() {return west;}
         
             //-------------------List instructions-------------
         
