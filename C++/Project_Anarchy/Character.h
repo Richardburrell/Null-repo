@@ -136,6 +136,9 @@ namespace CharacterType {
                 return (new Zombie(getX(), getY(), getZ(), getID(), getHealth()));
             }
         
+			bool operator == (Zombie& enemy){
+				return(this->iD == enemy.iD);
+			}
     }; //end of Zombie Definition
     
     

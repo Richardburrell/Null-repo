@@ -7,6 +7,8 @@
 //
 
 #include "Rooms.h"
+#define nullptr 0
+
 
 using namespace Rooms;
 
@@ -65,14 +67,15 @@ void roomGraph::setNodeId(const int& nodeiD){
 
 void roomGraph::appendZombie(Zombie& newZombie){     //appends a Zombie node to the end of the list
     ListTracker* itr = nullptr;
-	for (itr = head, itr != nullptr, itr = itr-> next){
-		itr-> next = new node (newZombie, nullptr);
+	for (itr = head; itr != nullptr; itr = itr-> next){
+		itr-> next = new ListTracker (newZombie, nullptr);
+	}
 }
 
 void roomGraph::deleteZombie(Zombie delZombie){     //this will traverse a list and delete a specific node
     ListTracker* before = head;
 	ListTracker* itr = nullptr;
-	for (itr = head, itr != nullptr, itr = itr-> next){
+	for (itr = head; itr != nullptr; itr = itr-> next){
 		if (head->getEnemy() == delZombie){
 			head = head->next;
 			itr-> next = nullptr;					//this is the special case where the zombie is the first in the list
