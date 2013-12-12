@@ -113,12 +113,9 @@ void roomGraph::appendZombie(Zombie& newZombie){     //appends a Zombie node to 
     ListTracker* itr = nullptr;
 	for (itr = head; itr != nullptr; itr = itr-> next){
 		itr-> next = new ListTracker (newZombie, nullptr);
-<<<<<<< HEAD
 	}
-=======
+
     }
->>>>>>> 1fab815662f198da09ed6b1ae7d05a9406ee0f92
-}
 
 void roomGraph::deleteZombie(Zombie delZombie){     //this will traverse a list and delete a specific node
     ListTracker* before = head;
