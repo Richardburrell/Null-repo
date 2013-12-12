@@ -142,7 +142,10 @@ namespace CharacterType {
         
             bool operator ==(const Zombie& assignThis);
         
+<<<<<<< HEAD
 
+=======
+>>>>>>> d68157c78e0dc9eede66358d0cf1efd29037bb3e
     }; //end of Zombie Definition
     
     
@@ -322,7 +325,11 @@ namespace Inventory {
         
         private:
         
+<<<<<<< HEAD
 			T* pack[3][3];        //array of type T pointers to items
+=======
+            T* pack[3][3];        //array of type T pointers to items
+>>>>>>> d68157c78e0dc9eede66358d0cf1efd29037bb3e
             int numOfElementsUsed;            //number of elements containing an item
         
         public:
@@ -370,7 +377,11 @@ namespace Inventory {
         
         private:
         
+<<<<<<< HEAD
 		T* bin[5][5];
+=======
+        T* bin[5][5];
+>>>>>>> d68157c78e0dc9eede66358d0cf1efd29037bb3e
         int numOfElementsUsed;            //number of elements containing an item
         
         public:

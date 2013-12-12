@@ -9,11 +9,14 @@
 #ifndef __Hazardous__World__
 #define __Hazardous__World__
 
+#define nullptr 0
+
 #include "Rooms.h"
 #include "Character.h"
 
 using namespace Rooms;
 using namespace CharacterType;
+
 
 #endif /* defined(__Hazardous__World__) */
 

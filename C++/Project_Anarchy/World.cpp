@@ -9,6 +9,8 @@
 #include "World.h"
 
 using namespace world;
+using namespace Rooms;
+using namespace CharacterType;
 
 //------------------------------Map Implementation------------------------------
 
@@ -24,7 +26,7 @@ Map::Map(){
 
 Map::Map(roomGraph* root, Player* human, ListTracker* head, Zombie* enemy){
     
-    this->root = root = new roomGraph(2, 1, 0, 0, 0, 0, 0, 0, nullptr, nullptr, nullptr, nullptr, nullptr);
+    this->root = root = new roomGraph(2, true, 0, 0, nullptr, nullptr, nullptr, nullptr, nullptr);
     
     this->human = human = new Player(0, 0, 0, 5);
     
@@ -63,21 +65,74 @@ void Map::setNumRooms(int numRooms){
 
 void Map::buildStation(){
     
-    roomGraph* itr = nullptr;
+	roomGraph* itrNorth = root;
+	roomGraph* itrSouth = root;
+	roomGraph* itrEast = root;
+	roomGraph* itrWest = root;
     
     if (getNumRooms() == 1) {
         
-        *root->getNorth() = *new roomGraph(0, 1, 0, numRooms, 0, 0, 0, 0, nullptr, root, nullptr, nullptr, nullptr);
+		itrNorth->north = new roomGraph(0, true, 0, numRooms, nullptr, root, nullptr, nullptr, nullptr);
         numRooms++;
+		itrNorth = itrNorth->north;
         
-        *root->getSouth() = *new roomGraph(0, 1, 0, numRooms, 0, 0, 0, 0, root, nullptr, nullptr, nullptr, nullptr);
+        itrSouth->south = new roomGraph(0, true, 0, numRooms, root, nullptr, nullptr, nullptr, nullptr);
         numRooms++;
+		itrSouth = itrSouth->south;
         
-        *root->getEast() = *new roomGraph(0, 1, 0, numRooms, 0, 0, 0, 0, nullptr, nullptr, root, nullptr, nullptr);
+        itrEast->east = new roomGraph(0, true, 0, numRooms, nullptr, nullptr, root, nullptr, nullptr);
         numRooms++;
+		itrEast = itrEast->east;
         
-        *root->getWest() = *new roomGraph(0, 1, 0, numRooms, 0, 0, 0, 0, nullptr, nullptr, nullptr, root, nullptr);
+        itrWest->west = new roomGraph(0, true, 0, numRooms, nullptr, nullptr, nullptr, root, nullptr);
         numRooms++;
+		itrWest = itrWest->west;
         
-    }
+    }else{
+		if(itrNorth->north == nullptr){
+			itrNorth->north = new roomGraph(0, true, 0, numRooms, nullptr, itrNorth, nullptr, nullptr, nullptr);
+			numRooms++;
+
+			if(itrNorth->east == nullptr){
+				itrNorth->east = new roomGraph(0, true, 0, numRooms, nullptr, nullptr, nullptr, itrNorth, nullptr);
+				numRooms++;
+			}
+
+			if(itrNorth->west == nullptr){
+				itrNorth->west = new roomGraph(0, true, 0, numRooms, nullptr, nullptr, itrNorth, nullptr, nullptr);
+				numRooms++;
+			}
+
+		}
+
+		if(itrSouth->south == nullptr){
+			itrSouth->south = new roomGraph(0, true, 0, numRooms, itrSouth, nullptr, nullptr, nullptr, nullptr);
+			numRooms++;
+
+			if(itrSouth->east == nullptr){
+				itrSouth->east = new roomGraph(0, true, 0, numRooms, nullptr, nullptr, nullptr, itrSouth, nullptr);
+				numRooms++;
+			}
+
+			if(itrSouth->west == nullptr){
+				itrSouth->west = new roomGraph(0, true, 0, numRooms, nullptr, nullptr, itrSouth, nullptr, nullptr);
+				numRooms++;
+			}
+		}
+
+		if(itrEast->east == nullptr){
+			itrEast->east = new roomGraph(0, true, 0, numRooms, itrNorth->east, itrSouth->east, nullptr, itrEast, nullptr);
+			itrNorth->east->south = itrEast;
+			itrSouth->east->north = itrEast;
+			numRooms++;
+		}
+
+		if(itrWest->west == nullptr){
+			itrWest->west = new roomGraph(0, true, 0, numRooms, itrNorth->west, itrSouth->west, itrWest, nullptr, nullptr);
+			itrNorth->west->south = itrWest;
+			itrSouth->west->north = itrWest;
+			numRooms++;
+		}
+
+	}
 }
