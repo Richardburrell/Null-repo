@@ -74,15 +74,65 @@ void Map::buildStation(){
         
 		itrNorth->north = new roomGraph(0, true, 0, numRooms, nullptr, root, nullptr, nullptr, nullptr);
         numRooms++;
+		itrNorth = itrNorth->north;
         
-        root->south = new roomGraph(0, true, 0, numRooms, root, nullptr, nullptr, nullptr, nullptr);
+        itrSouth->south = new roomGraph(0, true, 0, numRooms, root, nullptr, nullptr, nullptr, nullptr);
         numRooms++;
+		itrSouth = itrSouth->south;
         
-        root->east = new roomGraph(0, true, 0, numRooms, nullptr, nullptr, root, nullptr, nullptr);
+        itrEast->east = new roomGraph(0, true, 0, numRooms, nullptr, nullptr, root, nullptr, nullptr);
         numRooms++;
+		itrEast = itrEast->east;
         
-        root->west = new roomGraph(0, true, 0, numRooms, nullptr, nullptr, nullptr, root, nullptr);
+        itrWest->west = new roomGraph(0, true, 0, numRooms, nullptr, nullptr, nullptr, root, nullptr);
         numRooms++;
+		itrWest = itrWest->west;
         
-    }
+    }else{
+		if(itrNorth->north == nullptr){
+			itrNorth->north = new roomGraph(0, true, 0, numRooms, nullptr, itrNorth, nullptr, nullptr, nullptr);
+			numRooms++;
+
+			if(itrNorth->east == nullptr){
+				itrNorth->east = new roomGraph(0, true, 0, numRooms, nullptr, nullptr, nullptr, itrNorth, nullptr);
+				numRooms++;
+			}
+
+			if(itrNorth->west == nullptr){
+				itrNorth->west = new roomGraph(0, true, 0, numRooms, nullptr, nullptr, itrNorth, nullptr, nullptr);
+				numRooms++;
+			}
+
+		}
+
+		if(itrSouth->south == nullptr){
+			itrSouth->south = new roomGraph(0, true, 0, numRooms, itrSouth, nullptr, nullptr, nullptr, nullptr);
+			numRooms++;
+
+			if(itrSouth->east == nullptr){
+				itrSouth->east = new roomGraph(0, true, 0, numRooms, nullptr, nullptr, nullptr, itrSouth, nullptr);
+				numRooms++;
+			}
+
+			if(itrSouth->west == nullptr){
+				itrSouth->west = new roomGraph(0, true, 0, numRooms, nullptr, nullptr, itrSouth, nullptr, nullptr);
+				numRooms++;
+			}
+		}
+
+		if(itrEast->east == nullptr){
+			itrEast->east = new roomGraph(0, true, 0, numRooms, itrNorth->east, itrSouth->east, nullptr, itrEast, nullptr);
+			itrNorth->east->south = itrEast;
+			itrSouth->east->north = itrEast;
+			numRooms++;
+		}
+
+		if(itrWest->west == nullptr){
+			itrWest->west = new roomGraph(0, true, 0, numRooms, itrNorth->west, itrSouth->west, itrWest, nullptr, nullptr);
+			itrNorth->west->south = itrWest;
+			itrSouth->west->north = itrWest;
+			numRooms++;
+		}
+
+	}
 }

@@ -9,6 +9,8 @@
 #ifndef __Hazardous__World__
 #define __Hazardous__World__
 
+#define nullptr 0
+
 #include "Rooms.h"
 #include "Character.h"
 
