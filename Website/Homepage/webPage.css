@@ -1,0 +1,321 @@
+﻿*{
+	margin:0;
+	padding:0;
+}
+.h1-style{
+	text-align: center;
+	table-layout: auto;
+	font-size: 90pt;
+	font-family: "Courier", Courier, monospace;
+	margin-top: 25px;
+}
+.h2-style {
+	text-align: center;
+	font-size: 20pt;
+	font-family:"Courier", Courier, monospace;
+	margin-top:5px;
+	color:white;
+}
+
+.h3-style {
+	text-align:center;
+	font-size:30pt;
+	font-family:"Courier", Courier, monospace;
+	color:black;
+	margin-top: 15px;
+}
+
+.h3-invert{
+	text-align: center;
+	font-size: 30pt;
+	font-family: "Courier", Courier, monospace;
+	color: #48FC48;
+	margin-top: 10px;
+}
+
+.h4-style{
+	text-align: center;
+	font-size: 35pt;
+	font-family:"Courier", Courier, monospace;
+	margin-top:5px;
+	color:white;
+}
+
+.h5-style {
+	text-align: center;
+	font-size: 16pt;
+	font-family:"Courier", Courier, monospace;
+	margin-top:5px;
+	color:white;
+}
+
+
+.p-style{
+	font-size: 12pt;
+	font-family:"Courier", Courier, monospace;
+	color:black;
+	text-indent:12px;	
+}
+.href-style{
+	text-decoration:none;
+	font-family: "Courier", Courier, monospace;
+	font-size: 16pt;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	margin-top: 0px;
+	margin-left: 250px;
+	margin-right: 0px;	
+}
+.body{
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	text-align: center;
+	background-color:black;
+}
+.halign{
+	position:absolute;
+	top:181px;
+}
+
+#centered{
+	width: 1330px;
+	text-align: left;
+	border: 0px;
+	padding: 0;
+	margin: 0 auto;
+}
+#homeButton {
+	background-position: center;
+	width: 260px;
+	height: 75px;
+	margin-left: 0px;
+	margin-top: 75px;
+	font-family: 'Courier', Courier, monospace;
+	background-image: url('Images/TopPageNavButton.png');
+}
+#homeCurrentButton {
+	background-position: center;
+	text-align:	center;
+	font-size:30pt;
+	width: 260px;
+	height: 75px;
+	margin-left: 0px;
+	margin-top: 75px;
+	color: #48FC48;
+	font-family: 'Courier', Courier, monospace;
+	background-image: url('Images/TopCurrentNavButton.png');
+}
+
+#newsButton {
+	background-position: center;
+	width: 260px;
+	height: 75px;
+	margin-left: 265px;
+	margin-top: 75px;
+	font-family: 'Courier', Courier, monospace;
+	background-image: url('Images/TopPageNavButton.png');
+}
+#newsCurrentButton {
+	background-position: center;
+	text-align:	center;
+	width: 260px;
+	height: 75px;
+	margin-left: 265px;
+	margin-top: 75px;
+	color: #48FC48;
+	font-family: 'Courier', Courier, monospace;
+	background-image: url('Images/TopCurrentNavButton.png');
+}
+
+#forumButton {
+	background-position: center;
+	width: 260px;
+	height: 75px;
+	margin-left: 530px;
+	margin-top: 75px;
+	font-family: 'Courier', Courier, monospace;
+	background-image: url('Images/TopPageNavButton.png');
+}
+#forumCurrentButton {
+	background-position: center;
+	width: 260px;
+	height: 75px;
+	margin-left: 530px;
+	margin-top: 75px;
+	text-decoration: underline;
+	color: #48FC48;
+	font-family: 'Courier', Courier, monospace;
+	background-image: url('Images/TopCurrentNavButton.png');
+}
+
+#resButton {
+	background-position: center;
+	width: 260px;
+	height: 75px;
+	margin-left: 795px;
+	margin-top: 75px;
+	font-family: 'Courier', Courier, monospace;
+	background-image: url('Images/TopPageNavButton.png');
+}
+#resCurrentButton {
+	background-position: center;
+	width: 260px;
+	height: 75px;
+	margin-left: 795px;
+	margin-top: 75px;
+	color: #48FC48;
+	font-family: 'Courier', Courier, monospace;
+	background-image: url('Images/TopCurrentNavButton.png');
+}
+
+#aboutButton {
+	background-position: center;
+	width: 260px;
+	height: 75px;
+	margin-left: 1060px;
+	margin-top: 75px;
+	font-family: 'Courier', Courier, monospace;
+	background-image: url('Images/TopPageNavButton.png');
+}
+#aboutCurrentButton {
+	background-position: center;
+	width: 260px;
+	height: 75px;
+	margin-left: 1060px;
+	margin-top: 75px;
+	color: #48FC48;
+	font-family: 'Courier', Courier, monospace;
+	background-image: url('Images/TopCurrentNavButton.png');
+}
+
+#sideNav {
+	background-image:url('Images/SideNav.png');
+	background-position: center;
+	border: 2px solid white;
+	height:1175px;
+	width: 260px;
+	margin-top: 165px;
+	color: #FFFFFF;
+}
+#title {
+	background-image: url('Images/TitleBG.png');
+	background-position: center;
+	height:225px;
+	width: 1320px;
+	border: 2px solid white;
+	margin-left: 0px;
+	color: #FFFFFF;
+}
+#newsReal{
+	height: 645px;
+	width: 1055px;
+	margin-left: 265px;
+	margin-top: 165px;
+	background-color: #000000;
+	color:white;
+}
+#DivNewsReaderFX{
+	margin-left:10px;	
+}
+#mission{
+	height: 525px;
+	width: 500px;
+	margin-left: 277px;
+	margin-top: 815px;
+	background-color:white;
+	border: 2px solid white;
+}
+
+#bioScroll{
+	background-image:url('Images/bioScroll.png');
+	height: 525px;
+	width: 525px;
+	border: 2px solid white;
+	margin-left: 795px;
+	margin-top: 815px;
+	color:white;
+}
+#bottmBox{
+	height: 50px;
+	width: 1320px;
+	margin-left: 0px;
+	margin-top: 1350px;
+	background-color:black;
+	color:white;
+}
+#about{
+	height: 500px;
+	width: 1005px;
+	margin-left: 275px;
+	margin-top: 803px;
+	background-color:white;
+	padding: 20px;
+}
+#superDopeVidz{
+	background-image:url("Images/bioscroll.png");
+	background-position:center;
+	border:2px solid white;
+	height: 525px;
+	width: 515px;
+	margin-left: 270px;
+	margin-top: 165px;
+	background-color: #000000;
+	color:white;
+}
+#superDopeBooks{
+	height: 525px;
+	width: 515px;
+	margin-left: 795px;
+	margin-top: 165px;
+	background-color: #000000;
+	color:white;
+}
+#docMothaTrucka{
+	height: 525px;
+	width: 515px;
+	margin-left: 270px;
+	margin-top: 815px;
+	background-color: #000000;
+	color: white;
+} 
+#login{
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+	width: 450px;
+	border: 2px solid white;
+	background-image: url('Images/Login.png');
+	background-position: center;
+	color: white;
+}
+
+.loginStyle{
+	font-size:15pt;
+	font-family:"Courier New", Courier, monospace;
+	color:#48FC48;
+	text-align:left;
+}
+
+.loginForm{
+	margin-top:25px;
+	text-align:left;
+	margin-left:15px;
+	color:white;
+	font-family:"Courier New", Courier, monospace;
+	font-size:20pt;
+	font-weight:bold;
+}
+
+.submit{
+	background-color:black;
+	color:#48FC48;
+	width: 150px;
+	font-family:"Courier New", Courier, monospace;
+	font-weight:bold;
+	font-size:15pt;
+	margin-top: 40px;
+	margin-left: 25px;
+}
