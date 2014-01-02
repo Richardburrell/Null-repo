@@ -1,8 +1,8 @@
 <settings>
   <General_Properties>
     <assets value="images2.xml"/>
-    <componentWidth value="600"/>
-    <componentHeight value="320"/>
+    <componentWidth value="1045"/>
+    <componentHeight value="550"/>
     <moveX value="0"/>
     <moveY value="-60"/>
     <cameraX value="0"/>
@@ -43,8 +43,8 @@
   </Reflection_Properties>
   <Scroll_Bar>
     <type_Bar value="assets/scrollBar/Round/Bar.xml"/>
-    <width value="400"/>
-    <positionY value="276"/>
+    <width value="650"/>
+    <positionY value="450"/>
   </Scroll_Bar>
   <Play_Settings>
     <showPlay value="false"/>
