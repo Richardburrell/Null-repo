@@ -9,6 +9,7 @@
 	font-family: "Courier", Courier, monospace;
 	margin-top: 25px;
 }
+
 .h2-style {
 	text-decoration:none;
 	text-align: center;
@@ -17,6 +18,7 @@
 	margin-top:5px;
 	color:white;
 }
+
 
 .h3-style {
 	text-align:center;
@@ -50,19 +52,15 @@
 	color:white;
 }
 
-.quicklink-style {
-	text-align:center;
+.h6-style {
 	text-decoration: none;
-	font-size: 14pt;
+	text-align: center;
+	font-size: 12pt;
 	font-family: "Courier", Courier, monospace;
-	margin-top: 50px;
-	color: white;
+	margin-top: 5px;
+	color: #48FC48;
+	background-color: #000000;
 }
-
-.quicklink-spacingstyle {
-	line-height:20px;
-}
-
 
 .p-style{
 	font-size: 12pt;
@@ -92,6 +90,20 @@
 	position:absolute;
 	top:181px;
 }
+
+.quicklink-style {
+	text-align:center;
+	text-decoration: none;
+	font-size: 14pt;
+	font-family: "Courier", Courier, monospace;
+	margin-top: 50px;
+	color: white;
+}
+
+.quicklink-spacingstyle {
+	line-height:20px;
+}
+
 
 #centered{
 	width: 1330px;
@@ -264,7 +276,7 @@
 	width: 1005px;
 	margin-left: 275px;
 	margin-top: 803px;
-	background-color:white;
+	background-color:black;
 	padding: 20px;
 }
 #superDopeVidz{
