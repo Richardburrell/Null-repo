@@ -1,0 +1,43 @@
+﻿#prg{
+	height: 645px;
+	width: 1055px;
+	background-color: #000000;
+	color:white;
+	left:200px;	
+}
+#PL1{
+	width:200px;
+	height:200px;
+	left:90px;
+	margin-top:25px;
+	background-image:url("Images/CPPLink.png");
+	background-position:center;
+
+}
+#PL2{
+	width:200px;
+	height:200px;
+	left:315px;
+	margin-top:25px;
+	background-image:url("Images/JavaLink.png");
+	background-position:center;
+
+}
+#PL3{
+	width:200px;
+	height:200px;
+	left:540px;
+	margin-top:25px;
+	background-image:url("Images/JScriptLink.png");
+	background-position:center;
+
+}
+#PL4{
+	width:200px;
+	height:200px;
+	left:765px;
+	margin-top:25px;
+	background-image:url("Images/RubyLink.png");
+	background-position:center;
+
+}
