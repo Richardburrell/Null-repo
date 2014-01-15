@@ -309,43 +309,10 @@
 	background-color: #000000;
 	color: white;
 } 
-#login{
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	height: 200px;
-	width: 450px;
-	border: 2px solid white;
-	background-image: url('Images/Login.png');
-	background-position: center;
-	color: white;
-}
-
-.loginStyle{
-	font-size:15pt;
-	font-family:"Courier New", Courier, monospace;
-	color:#48FC48;
-	text-align:left;
-}
-
-.loginForm{
-	margin-top:25px;
-	text-align:left;
-	margin-left:15px;
-	color:white;
-	font-family:"Courier New", Courier, monospace;
-	font-size:20pt;
-	font-weight:bold;
-}
-
-.submit{
-	background-color:black;
-	color:#48FC48;
+#docLink{
 	width: 150px;
-	font-family:"Courier New", Courier, monospace;
-	font-weight:bold;
-	font-size:15pt;
-	margin-top: 40px;
-	margin-left: 25px;
+	height: 150px;
+	margin-left:10px;
+	margin-top:10px;
 }
 
