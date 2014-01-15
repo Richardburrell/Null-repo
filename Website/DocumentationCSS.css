@@ -3,7 +3,13 @@
 	width: 1055px;
 	background-color: #000000;
 	color:white;
-	left:200px;	
+	position:absolute;
+	left:0px;
+	top:0px;	
+}
+.halign2{
+	position:absolute;
+	top:410px;
 }
 #PL1{
 	width:200px;
@@ -38,6 +44,24 @@
 	left:765px;
 	margin-top:25px;
 	background-image:url("Images/RubyLink.png");
+	background-position:center;
+
+}
+#PL5{
+	width:200px;
+	height:200px;
+	left:90px;
+	margin-top:25px;
+	background-image:url("Images/PHPLink.png");
+	background-position:center;
+
+}
+#PL6{
+	width:200px;
+	height:200px;
+	left:315px;
+	margin-top:25px;
+	background-image:url("Images/HTMLLink.png");
 	background-position:center;
 
 }
